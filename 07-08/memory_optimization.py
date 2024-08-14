@@ -1,3 +1,5 @@
+import torch
+
 def loss_backprop(generator, criterion, out, targets, normalize):
     """
     Memory optmization. Compute each timestep separately and sum grads.
